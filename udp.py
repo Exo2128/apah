@@ -4,6 +4,10 @@ sys.stdout.write("\x1b]2;Exk. | Devices: [1] | Running Attacks [1] | Server Unit
 host = str(sys.argv[1])
 port = int(sys.argv[2])
 ip = socket.gethostbyname(host)
+
+proxys = open('proxies.txt').readlines()
+bots = len(proxys)
+
 os.system('cls' if os.name == 'nt' else 'clear')
 print(f"Tok.. Tok... Tok.... Paket.. Paket... Dari Exo Menyerang Ip {host} Port {port}")
 time.sleep(1)
